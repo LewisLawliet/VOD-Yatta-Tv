@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "Akashi";
+    src: url("../Fonts/akashi.ttf");
+
+    font-family: "Anime-Ace";
+    src: url("../Fonts/AnimeAce2.otf");
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F48930;
+    overflow-x: hidden;
+}
+
+/* Header */
+
+#header {
+    background: linear-gradient(to bottom, rgb(23, 137, 252), rgb(41, 110, 180));
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px solid #ffffff;
+}
+
+#header .orange {
+    background: #F48930;
+    width: 250px;
+    height: 203px;
+}
+
+#header #o01 {
+    transform: skewX(-20deg);
+    position: relative;
+    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #o01 img {
+    width: 121px;
+    transform: skewX(20deg);
+}
+
+#header #o01 nav {
+    display: none;
+}
+
+#header #o02 {
+    transform: skewX(20deg);
+    position: relative;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #o02 p {
+    transform: skewX(-20deg);
+    font-family: "Akashi", serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#header .logo {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+    position: relative;
+}
+
+#header .logo img {
+    width: 125px;
+    position: absolute;
+    left: 125px;
+    bottom: 18px;
+}
+
+#header .logo .titre {
+    font-family: "Akashi", serif;
+    font-size: 96px;
+    color: #ffffff;
+    text-align: end;
+    margin: 0;
+}
+
+/* Section Vidéo */
+#video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video video {
+    width: 101%;
+    border-bottom: 6px solid #ffffff;
+}
+
+#video button {
+    width: 465px;
+    height: 85px;
+    background: #296EB4;
+    border-radius: 10px;
+    margin: 30px 0 0 0;
+    font-family: "Akashi" ,serif;
+    color: #ffffff;
+    font-size: 36px;
+    border: none;
+}
+
+/* Section Catalogue */
+#catalogue {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#catalogue #encartText {
+    width: 50%;
+    margin: 42px;
+}
+
+#catalogue #encartText h2 {
+    font-family: "Akashi", serif;
+    font-size: 64px;
+    color: #ffffff;
+}
+
+#catalogue #encartText p {
+    font-family: "Anime-Ace", serif;
+    font-size: 18px;
+    /* color: #ffffff; */
+}
+
+#catalogue #newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 50px 0 0 0;
+}
+
+#catalogue #newsletter #text {
+    width: 459px;
+    height: 51px;
+    background: #CC5803;
+    border-radius: 10px;
+    border: none;
+    margin: 0 25px 0 0;
+}
+
+#catalogue #newsletter #text::placeholder {
+    font-family: "Anime-Ace", serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 0 0 15px;
+}
+
+#catalogue #newsletter #submit {
+    width: 196px;
+    height: 51px;
+    background: #296EB4;
+    border-radius: 10px;
+    border: none;
+    font-family: "Akashi", serif;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/* Section Offres */
+#offres {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#offres .offre {
+    width: 560px;
+    height: 263px;
+    background: rgba(204, 88, 3, 0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#offres .offre .click {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#offres .offre .deroule {
+    display: none;
+}

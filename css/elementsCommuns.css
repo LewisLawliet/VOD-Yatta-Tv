@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Akashi";
+    src: url("../Fonts/akashi.ttf");
+
+    font-family: "Anime-Ace";
+    src: url("../Fonts/AnimeAce2.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #F48930;
+    overflow-x: hidden;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(to bottom, rgb(23, 137, 252), rgb(41, 110, 180));
+    width: 100%;
+    min-height: 27vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 6px solid #ffffff;
+}
+
+#header .orange {
+    background: #F48930;
+    width: 250px;
+    height: 27vh;
+}
+
+#header #o01 {
+    transform: skewX(-20deg);
+    position: relative;
+    left: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #o01 img {
+    width: 121px;
+    transform: skewX(20deg);
+}
+
+#header #o01 nav {
+    display: none;
+}
+
+#header #o02 {
+    transform: skewX(20deg);
+    position: relative;
+    right: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header #o02 p {
+    transform: skewX(-20deg);
+    font-family: "Akashi", serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#header .logo {
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: flex-end;
+    position: relative;
+}
+
+#header .logo img {
+    width: 125px;
+    position: absolute;
+    left: 125px;
+    bottom: 18px;
+}
+
+#header .logo .titre {
+    font-family: "Akashi", serif;
+    font-size: 96px;
+    color: #ffffff;
+    text-align: end;
+    margin: 0;
+}
+
+/* Footer */
+#footer {
+    width: 100%;
+    min-height: 264px;
+    background: #296EB4;
+    border-top: 6px solid #ffffff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Anime-Ace", serif;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#footer .liste li {
+    list-style: none;
+    margin: 15px;
+}
+
+#footer #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #icons img:nth-child(3) {
+    margin-left: 6px;
+}

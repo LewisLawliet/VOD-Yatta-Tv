@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register/Login Form</title>
-    <link rel="stylesheet" href="../css/elementsCommuns.css">
-    <link rel="stylesheet" href="../css/registerLoginPage.css">
-    <script src="../js/registerLoginPage.js"></script>
+    <link rel="stylesheet" href="./css/elementsCommuns.css">
+    <link rel="stylesheet" href="./css/registerLoginPage.css">
+    <script src="./js/registerLoginPage.js"></script>
 </head>
 <body>
    <!-- Header fixe -->
    <header id="header">
         <div class="orange" id="o01">
-            <img src="../Logo_Icônes/MenuYatta02.png" alt="Menu Burger Yatta.Tv">
+            <img src="./Logo_Icônes/MenuYatta02.png" alt="Menu Burger Yatta.Tv">
             <nav>
                 <a href="#video">Accueil</a>
                 <a href="#catalogue">Catalogue</a>
@@ -23,7 +23,7 @@
         </div>
         <div class="logo">
             <p class="titre" id="t01">Ya</p>
-            <img src="../Logo_Icônes/LogoYatta02.png" alt="Logo Yatta.Tv">
+            <img src="./Logo_Icônes/LogoYatta02.png" alt="Logo Yatta.Tv">
             <p class="titre" id="t02">a.Tv</p>
         </div>
         <div class="orange" id="o02">
@@ -33,14 +33,19 @@
 
     <section id="registerLoginForm">
         <div id="headerForm">
-            <a id="loginFormLink" href="">Se connecter</a>
-            <a id="registerFormLink" href="">S'enregistrer</a>
+            <a id="loginFormLink" class="link" href="#">Se connecter</a>
+            <a id="registerFormLink" class="link" href="#">S'enregistrer</a>
         </div>
 
         <div id="registerForm" class="form">
             <div id="regInput">
+                <p>Nom d'utilisateur</p>
                 <input type="text" placeholder="Nom d'utilisateur">
+
+                <p>E-mail</p>
                 <input type="text" placeholder="E-mail">
+                
+                <p>Mot de passe</p>
                 <input type="text" placeholder="Mot de passe">
             </div>
 
@@ -49,8 +54,11 @@
         </div>
 
         <div id="loginForm" class="form">
-            <div id="regInput">
+            <div id="logInput">
+                <p>E-mail</p>
                 <input type="text" placeholder="E-mail">
+                
+                <p>Mot de passe</p>
                 <input type="text" placeholder="Mot de passe">
             </div>
 
@@ -72,9 +80,9 @@
             <li>Shop</li>
         </ul>
         <div id="icons">
-            <img src="../Logo_Icônes/icons8-facebook-48 1.png" alt="Icône FB">
-            <img src="../Logo_Icônes/icons8-twitter-squared-48 1.png" alt="Icône Twitter">
-            <img src="../Logo_Icônes/icons8-instagram-480 1.png" alt="Icône Instagram">
+            <img src="./Logo_Icônes/icons8-facebook-48 1.png" alt="Icône FB">
+            <img src="./Logo_Icônes/icons8-twitter-squared-48 1.png" alt="Icône Twitter">
+            <img src="./Logo_Icônes/icons8-instagram-480 1.png" alt="Icône Instagram">
         </div>
     </footer>
 </body>

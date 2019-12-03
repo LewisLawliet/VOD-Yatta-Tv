@@ -29,19 +29,25 @@ body {
     text-decoration: none;
     color: white;
     text-align: center;
+    margin: 0;
+    cursor: pointer;
 }
 
-#registerLoginForm #headerForm #loginFormLink {
+#registerLoginForm #headerForm #registerFormLink {
     background: #1789FC;
     border-top: 6px solid white;
     border-right: 6px solid white;
     border-left: 6px solid white;
-    padding: 0 0 6px 0;
+    padding: 0 0 12px 0;
 }
 
-#registerLoginForm #headerForm #registerFormLink {
+#registerLoginForm #headerForm #loginFormLink {
     background: #CC5803;
-    border: 6px solid white;
+    border-top: 6px solid white;
+    border-right: 6px solid white;
+    border-left: 6px solid white;
+    border-bottom: 6px solid white;
+    padding: 0 0 6px 0;
 }
 
 /* Communs Register/Login Form */
@@ -54,7 +60,40 @@ body {
     border-bottom: 6px solid white;
 }
 
-/* Register Form */
+#registerLoginForm #registerForm button, #registerLoginForm #loginForm button {
+    width: 250px;
+    min-height: 60px;
+    background: #F48930;
+    border: 6px solid white;
+    font-family: "Akashi", serif;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#registerLoginForm #registerForm #regInput, #registerLoginForm #loginForm #logInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#registerLoginForm #registerForm #regInput p, #registerLoginForm #loginForm #logInput p {
+    align-self: flex-start;
+    margin: 0;
+    font-size: 24px;
+}
+
+#registerLoginForm #registerForm #regInput input, #registerLoginForm #loginForm #logInput input{
+    width: 488px;
+    min-height: 60px;
+    margin: 0 0 44px 0;
+    border: none;
+    font-family: "Anime-Ace", serif;
+    font-size: 16px;
+}
+
+/* Register Form Only */
 
 #registerLoginForm #registerForm {
     background: #1789FC;
@@ -64,39 +103,13 @@ body {
     align-items: center;
 }
 
-#registerLoginForm #registerForm button {
-    width: 250px;
-    min-height: 60px;
-    background: #F48930;
-    border: 6px solid white;
-    font-family: "Akashi", serif;
-    font-size: 24px;
-    color: white;
-}
+/* Login Form Only */
 
-#registerLoginForm #registerForm #regInput {
-    display: flex;
+#registerLoginForm #loginForm {
+    background: #CC5803;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#registerLoginForm #registerForm #regInput p {
-    align-self: flex-start;
-    margin: 0;
-    font-size: 24px;
-}
-
-#registerLoginForm #registerForm #regInput input{
-    width: 488px;
-    min-height: 60px;
-    margin: 0 0 44px 0;
-    border: none;
-}
-
-/* Login Form */
-
-#registerLoginForm #loginForm {
-    display: none;
 }
 

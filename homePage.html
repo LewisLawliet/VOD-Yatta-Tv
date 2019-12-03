@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yatta.Tv</title>
-    <link rel="stylesheet" href="./css/homePage.css">
     <link rel="stylesheet" href="./css/elementsCommuns.css">
+    <link rel="stylesheet" href="./slick/slick.css">
+    <link rel="stylesheet" href="./css/homePage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <!-- Optional: Reflection -->
-	<script type="text/javascript" src="./coverflow-master/reflection.js"></script>
-    <!-- interpolate, depends on jQ 1.8.0+ -->
 	<script src="./coverflow-master/jquery.interpolate.min.js"></script>
-	<!-- Coverflow -->
     <script src="./coverflow-master/jquery.coverflow.js"></script>
+    <script src="./slick/slick.js"></script>
     <script src="./js/homePage.js"></script>
 </head>
 <body>
@@ -35,45 +33,75 @@
             <p class="titre" id="t02">a.Tv</p>
         </div>
         <div class="orange" id="o02">
-            <p>Se <br> connecter</p>
+            <a href="#"><img src="./Logo_Icônes/LogoYattaContour2.png" alt=""></a>
         </div>
     </header>
 
     <main id="mainContainer">
         <!-- Coverflow -->
         <div class="coverflow">
-            <div class="cover"><img src="./Vidéo+Images/DemonSlayer.jpg" alt="Affiche Demon Slayer"></div>
-            <div class="cover"><img src="./Vidéo+Images/FMA.jpg" alt="Affiche FullMetal Alchemist"></div>
-            <div class="cover"><img src="./Vidéo+Images/FruitsBasket.jpg" alt="Affiche Fruits Basket"></div>
-            <div class="cover"><img src="./Vidéo+Images/PsychoPass.jpg" alt="Affiche PsychoPass"></div>
-            <div class="cover"><img src="./Vidéo+Images/YurionIce.jpg" alt="Affiche Yuri on Ice"></div>
+            <img class="cover" src="./Vidéo+Images/FruitsBasket.jpg" alt="Affiche Fruits Basket">
+            <img class="cover" src="./Vidéo+Images/FMA.jpg" alt="Affiche FullMetal Alchemist">
+            <img class="cover" src="./Vidéo+Images/DemonSlayer.jpg" alt="Affiche Demon Slayer">
+            <img class="cover" src="./Vidéo+Images/PsychoPass.jpg" alt="Affiche PsychoPass">
+            <img class="cover" src="./Vidéo+Images/YurionIce.jpg" alt="Affiche Yuri on Ice">
         </div>
     
         <!-- Slider Animes du moment -->
         <div class="slider">
-            <div class="entête"><p>Animes du moment</p></div>
-            <div class="slide"><img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer"></div>
-            <div class="slide"><img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Slide Fruits Basket"></div>
-            <div class="slide"><img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice"></div>
-            <div class="slide"><img src="./Vidéo+Images/FMASlide.jpg" alt="Slide FMA"></div>
+            <div class="slide">
+                    <div class="entête"><p>Animes du moment</p></div>
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Slide Fruits Basket">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/FMASlide.jpg" alt="Slide FMA">
+            </div>
         </div>
     
         <!-- Slider Dernières sorties -->
         <div class="slider-reverse">
-            <div class="entête"><p>Dernières sorties</p></div>
-            <div class="slide"><img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice"></div>
-            <div class="slide"><img src="./Vidéo+Images/FMASlide.jpg" alt="Slide FMA"></div>
-            <div class="slide"><img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Fruits Basket"></div>
-            <div class="slide"><img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer"></div>
+            <div class="slide">
+                <div class="entête"><p>Dernières sorties</p></div>
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/FMASlide.jpg" alt="Slide FMA">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Fruits Basket">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer">
+            </div>
         </div>
     
         <!-- Slider Catégories -->
         <div class="slider">
-            <div class="entête"><p>Catégories</p></div>
-            <div class="slide"><img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer"></div>
-            <div class="slide"><img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Slide FMA"></div>
-            <div class="slide"><img src="./Vidéo+Images/PsychoPassSlide.jpg" alt="Slide PsychoPass"></div>
-            <div class="slide"><img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice"></div>
+            <div class="slide">
+                <div class="entête"><p>Catégories</p></div>
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/DemonSlayerSlide.jpg" alt="Slide Demon Slayer">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/FruitsBasketSlide.jpg" alt="Slide FMA">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/PsychoPassSlide.jpg" alt="Slide PsychoPass">
+            </div>
+            <div class="slide">
+                <img src="./Vidéo+Images/YurionIceSlide.jpg" alt="Slide Yuri on Ice">
+            </div>
         </div>
 
     </main>

@@ -30,6 +30,7 @@
     color: #ffffff;
     font-size: 36px;
     border: none;
+    cursor: pointer;
 }
 
 /* Section Catalogue */
@@ -89,6 +90,7 @@
     font-family: "Akashi", serif;
     font-size: 24px;
     color: #ffffff;
+    cursor: pointer;
 }
 
 /* Section Offres */
@@ -102,13 +104,14 @@
 
 #offres .offre {
     width: 560px;
-    height: 300px;
+    height: auto;
     background: rgba(204, 88, 3, 0.6);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #offres .offre .click {

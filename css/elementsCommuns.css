@@ -35,17 +35,44 @@ body {
     position: relative;
     left: -50px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 #header #o01 img {
+    position: fixed;
     width: 121px;
+    height: auto;
     transform: skewX(20deg);
+    cursor: pointer;
 }
 
 #header #o01 nav {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 155px;
+    top: 45px;
+    z-index: 20;
+    transform: skewX(20deg);
+    width: 100px;
+    height: auto;
+    padding: 10px;
+    background: #CC5803;
+    border: 6px solid #ffffff;
+}
+
+#header #o01 nav a {
+    z-index: 20;
+    font-family: "Akashi", serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
 }
 
 #header #o02 {
@@ -63,6 +90,12 @@ body {
     font-size: 24px;
     color: #ffffff;
     text-align: center;
+    cursor: pointer;
+}
+
+#header #o02 a img {
+    transform: skewX(-20deg);
+    width: 175px;
 }
 
 #header .logo {
@@ -109,8 +142,9 @@ body {
 }
 
 #footer #icons {
+    width: 18%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
